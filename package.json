@@ -5,6 +5,9 @@
   "repository": "git@github.com:aminnairi/hyperapp-materialize",
   "author": "Amin NAIRI <nairi.amin@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "eslint:init": "eslint --init"
+  },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
