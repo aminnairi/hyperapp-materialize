@@ -6,7 +6,8 @@
   "author": "Amin NAIRI <nairi.amin@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "eslint:init": "eslint --init"
+    "eslint:init": "eslint --init",
+    "build": "webpack"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
