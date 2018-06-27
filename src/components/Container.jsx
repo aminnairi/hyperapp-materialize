@@ -7,7 +7,7 @@ export const Container = ({ full, className, ...attributes }, children) => {
 
   return () => {
 
-    const classes = `${ full ? 'container-full' : 'full' } ${ className }`
+    const classes = `${ full ? 'container-full' : 'container' } ${ className ? className : '' }`.trim()
 
     return (
 
