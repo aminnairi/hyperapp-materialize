@@ -7,13 +7,16 @@
   "license": "MIT",
   "scripts": {
     "eslint:init": "eslint --init",
-    "build": "webpack"
+    "dev": "webpack",
+    "prod": "webpack --mode production -p --env.production"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^0.1.19",
     "eslint": "^5.0.1",
     "webpack": "^4.12.2",
     "webpack-cli": "^3.0.8"
