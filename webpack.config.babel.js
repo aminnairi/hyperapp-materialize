@@ -1,30 +1,39 @@
 import path from 'path'
+import CleanWebpackPlugin from 'clean-webpack-plugin'
 
-export default {
-  mode: 'development',
+export default env => {
 
-  entry: {
-    index: path.resolve(__dirname, 'src', 'index.jsx')
-  },
+  return {
 
-  output: {
-    filename: 'index.js',
-    path: path.resolve(__dirname, 'dist'),
-    library: 'hyperapp-materialize',
-    libraryTarget: 'umd'
-  },
+    entry: {
+      index: path.resolve(__dirname, 'src', 'index.jsx')
+    },
 
-  externals: {
-    hyperapp: 'hyperapp'
-  },
+    output: {
+      filename: env.production ? '[name].min.js' : '[name].js',
+      path: path.resolve(__dirname, 'dist'),
+      library: 'hyperapp-materialize',
+      libraryTarget: 'umd'
+    },
 
-  module: {
-    rules: [
-      {
-        test: /\.jsx/,
-        include: /src/,
-        loader: 'babel-loader'
-      }
+    externals: {
+      hyperapp: 'hyperapp'
+    },
+
+    module: {
+      rules: [
+        {
+          test: /\.jsx/,
+          include: /src/,
+          loader: 'babel-loader'
+        }
+      ]
+    },
+
+    plugins: [
+      new CleanWebpackPlugin(['dist'])
     ]
+
   }
+
 }
