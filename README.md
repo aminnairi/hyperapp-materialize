@@ -1,6 +1,8 @@
 # hyperapp-materialize
 Hyperapp Components for Materialize CSS
 
+:warning: Note that the NPM package is not yet shipped. It will take some time until I settle and configure everything but it should be ready soon! :warning:
+
 ## Usage
 
 ```javascript
