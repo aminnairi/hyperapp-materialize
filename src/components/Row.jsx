@@ -1,10 +1,12 @@
-export const Row = (props, children) => {
+export const Row = ({ className, ...attributes }, children) => {
 
   return () => {
 
     return (
 
-      <div class='row'>
+      const classes = `row${ className }`
+
+      <div class='row' { ...attributes }>
 
         { children }
 
