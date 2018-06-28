@@ -2,9 +2,9 @@ export const Row = ({ className, ...attributes }, children) => {
 
   return () => {
 
-    return (
+    const classes = `row${ className }`
 
-      const classes = `row${ className }`
+    return (
 
       <div class='row' { ...attributes }>
 
