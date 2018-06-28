@@ -16,7 +16,7 @@ export const Column = ({ small, medium, large, extraLarge, className, ...attribu
 
   return () => {
 
-    const classes = `col ${col('s', small)} ${col('m', medium)} ${col('l', large)} ${col('xl', extraLarge)}`.trim()
+    const classes = `col ${col('s', small)} ${col('m', medium)} ${col('l', large)} ${col('xl', extraLarge)}`.replace(/\s+/, ' ').trim()
 
     return (
 
