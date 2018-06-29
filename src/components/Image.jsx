@@ -18,9 +18,15 @@ export const Image = ({ src, alt, responsive, circle, className, ...props }) => 
 
     }
 
+    if (className) {
+
+      classes.push(className)
+
+    }
+
     return (
 
-      <img className={ classes.join(' ') + className } src={ src } alt={ alt } { ...props } />
+      <img className={ classes.join(' ') } src={ src } alt={ alt } { ...props } />
 
     )
 
