@@ -6,7 +6,7 @@ export default env => {
   return {
 
     entry: {
-      index: path.resolve(__dirname, 'src', 'index.jsx')
+      'hyperapp-materialize': path.resolve(__dirname, 'src', 'index.jsx')
     },
 
     output: {
