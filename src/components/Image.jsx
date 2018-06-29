@@ -1,6 +1,6 @@
 import { h } from 'hyperapp'
 
-export const Image = ({ src, alt, responsive, circle, className, ...attributes }) => {
+export const Image = ({ src, alt, responsive, circle, className, ...props }) => {
 
   return () => {
 
@@ -20,7 +20,7 @@ export const Image = ({ src, alt, responsive, circle, className, ...attributes }
 
     return (
 
-      <img className={ classes.join(' ') + className } src={ src } alt={ alt } { ...attributes } />
+      <img className={ classes.join(' ') + className } src={ src } alt={ alt } { ...props } />
 
     )
 
