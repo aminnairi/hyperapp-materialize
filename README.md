@@ -73,6 +73,20 @@ $ yarn add hyperapp materialize-css@next hyperapp-materialize
 <Image src='path/to/image.png' alt='image' circle />
 ```
 
+### Table
+
+```html
+<Table></Table>
+
+<Table striped></Table>
+
+<Table highlight></Table>
+
+<Table centered></Table>
+
+<Table responsive></Table>
+```
+
 ### Video
 
 ```html
