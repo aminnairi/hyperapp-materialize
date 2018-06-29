@@ -8,7 +8,7 @@ const col = (prefix, value) => {
 
   }
 
-  return ''
+  return `${prefix}12`
 
 }
 
@@ -16,11 +16,17 @@ export const Column = ({ small, medium, large, extraLarge, className, ...attribu
 
   return () => {
 
-    const classes = `col ${col('s', small)} ${col('m', medium)} ${col('l', large)} ${col('xl', extraLarge)}`.replace(/\s+/, ' ').trim()
+    let classes = [`col`]
+
+    classes.push(col('s', small))
+    classes.push(col('m', medium))
+    classes.push(col('l', large))
+    classes.push(col('xl', extraLarge))
+    classes.push(className)
 
     return (
 
-      <div className={ classes } { ...attributes }>
+      <div className={ classes.join(' ') } { ...attributes }>
 
         { children }
 
