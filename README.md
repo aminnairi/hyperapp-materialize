@@ -63,6 +63,40 @@ $ yarn add hyperapp materialize-css@next hyperapp-materialize
 <Column extraLarge='12'></Column>
 ```
 
+### Image
+
+```html
+<Image src='path/to/image.png' alt='image' />
+
+<Image src='path/to/image.png' alt='image' responsive />
+
+<Image src='path/to/image.png' alt='image' circle />
+```
+
+### Video
+
+```html
+<Video>
+  <source src='path/to/video.mp4' type='video/mp4'/>
+  <source src='path/to/video.webm' type='video/webm'/>
+  <source src='path/to/video.ogg' type='video/ogg'/>
+</Video>
+
+<Video responsive>
+  <source src='path/to/video.mp4' type='video/mp4'/>
+  <source src='path/to/video.webm' type='video/webm'/>
+  <source src='path/to/video.ogg' type='video/ogg'/>
+</Video>
+```
+
+### Video Container
+
+```html
+<VideoContainer>
+  <iframe src='url/to/video.com' />
+</VideoContainer>
+```
+
 ## Documentation
 - [Hyperapp](https://github.com/hyperapp/hyperapp)
 - [Materialize](https://materializecss.com/)
