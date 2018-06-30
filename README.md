@@ -73,6 +73,12 @@ $ yarn add hyperapp materialize-css@next hyperapp-materialize
 <Button halfway></Button>
 ```
 
+### Card
+
+```html
+<Card></Card>
+```
+
 ### Container
 
 ```html
