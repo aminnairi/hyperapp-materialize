@@ -4,9 +4,18 @@ export const VideoContainer = ({ className, ...props }, children) => {
 
   return () => {
 
+    const classes = []
+
+    if (className) {
+
+      classes.push(className)
+
+    }
+
+
     return (
 
-      <div className={ `responsive-video ${ className }` } { ...props }>
+      <div className={ classes.join(' ') } { ...props }>
 
         { children }
 
