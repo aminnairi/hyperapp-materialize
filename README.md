@@ -37,6 +37,12 @@ $ yarn add hyperapp materialize-css@next hyperapp-materialize
 
 ## Components
 
+## Badge
+
+```html
+<Badge></Badge>
+```
+
 ### Container
 
 ```html
