@@ -52,7 +52,7 @@ export const Button = ({ href, large, small, disabled, flat, floating, className
 
       return (
 
-        <a className={ className } href={ href } { ...props }>
+        <a className={ classes.join(' ') } href={ href } { ...props }>
 
           { children }
 
@@ -64,7 +64,7 @@ export const Button = ({ href, large, small, disabled, flat, floating, className
 
       return (
 
-        <button className={ className } { ...props }>
+        <button className={ classes.join(' ') } { ...props }>
 
           { children }
 
