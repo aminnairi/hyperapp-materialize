@@ -16,7 +16,7 @@ export const Column = ({ small, medium, large, extraLarge, className, ...attribu
 
   return () => {
 
-    let classes = [`col`]
+    let classes = ['col']
 
     classes.push(col('s', small))
     classes.push(col('m', medium))
