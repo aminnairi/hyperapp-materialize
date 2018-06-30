@@ -7,11 +7,27 @@ export const Container = ({ full, className, ...attributes }, children) => {
 
   return () => {
 
-    const classes = `${ full ? 'container-full' : 'container' } ${ className ? className : '' }`.trim()
+    const classes = []
+
+    if (full) {
+
+      classes.push('container-full')
+
+    } else {
+
+      classes.push('container')
+
+    }
+
+    if (className) {
+
+      classes.push(className)
+
+    }
 
     return (
 
-      <div class={ classes } { ...attributes }>
+      <div class={ classes.join(' ') } { ...attributes }>
 
         { children }
 
