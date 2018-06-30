@@ -1,3 +1,4 @@
+import packagejson from './package.json'
 import path from 'path'
 import CleanWebpackPlugin from 'clean-webpack-plugin'
 
@@ -6,7 +7,7 @@ export default env => {
   return {
 
     entry: {
-      'hyperapp-materialize': path.resolve(__dirname, 'src', 'index.jsx')
+      [`${path.parse(packagejson.main).name}`]: path.resolve(__dirname, packagejson.main)
     },
 
     output: {
@@ -25,7 +26,10 @@ export default env => {
         {
           test: /\.jsx/,
           include: /src/,
-          loader: 'babel-loader'
+          use: [
+            'babel-loader',
+            'eslint-loader'
+          ]
         }
       ]
     },
