@@ -1,4 +1,5 @@
 import { Badge }          from './components/Badge.jsx'
+import { Button }         from './components/Button.jsx'
 import { Column }         from './components/Column.jsx'
 import { Container }      from './components/Container.jsx'
 import { Image }          from './components/Image.jsx'
@@ -9,6 +10,7 @@ import { VideoContainer } from './components/VideoContainer.jsx'
 
 export {
   Badge,
+  Button,
   Column,
   Container,
   Image,
