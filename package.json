@@ -23,5 +23,7 @@
     "webpack": "^4.12.2",
     "webpack-cli": "^3.0.8"
   },
-  "dependencies": {}
+  "peerDependencies": {
+    "hyperapp": "1.x.x"
+  }
 }
