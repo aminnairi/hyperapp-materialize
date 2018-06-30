@@ -1,6 +1,6 @@
 import { h } from 'hyperapp'
 
-export const Table = ({ striped, highlight, centered, responsive, className }, children) => {
+export const Table = ({ striped, highlight, centered, responsive, className, ...props }, children) => {
 
   return () => {
 
