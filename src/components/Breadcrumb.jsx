@@ -38,6 +38,8 @@ export const Breadcrumb = ({ href, className, ...props }, children) => {
 
     }
 
+    classes.push('breadcrumb')
+
     return (
 
       <a href={ href } className={ classes.join(' ') } { ...props }>
