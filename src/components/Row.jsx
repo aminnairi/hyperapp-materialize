@@ -1,14 +1,20 @@
 import { h } from 'hyperapp'
 
-export const Row = ({ className, ...attributes }, children) => {
+export const Row = ({ className, ...props }, children) => {
 
   return () => {
 
-    const classes = `row${ className }`
+    const classes = [ 'row' ]
+
+    if (className) {
+
+      classes.push(className)
+
+    }
 
     return (
 
-      <div class='row' { ...attributes }>
+      <div class={ classes } { ...props }>
 
         { children }
 
