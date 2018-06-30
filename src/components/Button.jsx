@@ -1,6 +1,6 @@
 import { h } from 'hyperapp'
 
-export const Button = ({ href, large, small, disabled, flat, floating, pulse, className, ...props }, children) => {
+export const Button = ({ href, large, small, disabled, flat, floating, pulse, halfway, className, ...props }, children) => {
 
   return () => {
 
@@ -51,6 +51,12 @@ export const Button = ({ href, large, small, disabled, flat, floating, pulse, cl
     if (pulse) {
 
       classes.push('pulse')
+
+    }
+
+    if (halfway) {
+
+      classes.push('halfway-fab')
 
     }
 
