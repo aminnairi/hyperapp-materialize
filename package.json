@@ -1,7 +1,7 @@
 {
   "name": "hyperapp-materialize",
   "version": "0.0.0",
-  "main": "dist/index.min.js",
+  "main": "src/hyperapp-materialize.jsx",
   "repository": "git@github.com:aminnairi/hyperapp-materialize",
   "author": "Amin NAIRI <nairi.amin@gmail.com>",
   "license": "MIT",
@@ -17,7 +17,8 @@
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.7.0",
     "clean-webpack-plugin": "^0.1.19",
-    "eslint": "^5.0.1",
+    "eslint": "4.19.1",
+    "eslint-loader": "^2.0.0",
     "hyperapp": "^1.2.6",
     "webpack": "^4.12.2",
     "webpack-cli": "^3.0.8"
