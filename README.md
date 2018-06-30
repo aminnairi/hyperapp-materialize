@@ -43,6 +43,16 @@ $ yarn add hyperapp materialize-css@next hyperapp-materialize
 <Badge></Badge>
 ```
 
+### Breadcrumbs
+
+```html
+<Breadcrumbs>
+  <Breadcrumb></Breadcrumb>
+  <Breadcrumb></Breadcrumb>
+  <Breadcrumb></Breadcrumb>
+</Breadcrumbs>
+```
+
 ### Button
 
 ```html
