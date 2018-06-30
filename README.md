@@ -37,10 +37,26 @@ $ yarn add hyperapp materialize-css@next hyperapp-materialize
 
 ## Components
 
-## Badge
+### Badge
 
 ```html
 <Badge></Badge>
+```
+
+### Button
+
+```html
+<Button></Button>
+
+<Button href='https://github.com/aminnairi/hyperapp-materialize'></Button>
+
+<Button floating></Button>
+
+<Button flat></Button>
+
+<Button large></Button>
+
+<Button small></Button>
 ```
 
 ### Container
