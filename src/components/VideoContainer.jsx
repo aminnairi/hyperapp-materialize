@@ -12,7 +12,6 @@ export const VideoContainer = ({ className, ...props }, children) => {
 
     }
 
-
     return (
 
       <div className={ classes.join(' ') } { ...props }>
