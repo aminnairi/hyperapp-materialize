@@ -57,6 +57,8 @@ $ yarn add hyperapp materialize-css@next hyperapp-materialize
 <Button large></Button>
 
 <Button small></Button>
+
+<Button pulse></Button>
 ```
 
 ### Container
