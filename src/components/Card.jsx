@@ -1,6 +1,6 @@
 import { h } from 'hyperapp'
 
-export const Card = ({ small, medium, large, stickyActions, className, ...props }, children) => {
+export const Card = ({ small, medium, large, stickyActions, panel, className, ...props }, children) => {
 
   return () => {
 
@@ -26,6 +26,10 @@ export const Card = ({ small, medium, large, stickyActions, className, ...props 
 
     if (large) {
       classes.push('large')
+    }
+
+    if (panel) {
+      classes.push('panel')
     }
 
     classes.push('card')
