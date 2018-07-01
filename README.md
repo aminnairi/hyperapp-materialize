@@ -95,18 +95,20 @@ $ yarn add hyperapp materialize-css@next hyperapp-materialize
 
 ```html
 <CardAction></CardAction>
+
+<CardAction activator></CardAction>
 ```
 
 ### Card Content
 
 ```html
-<CardContent></CardContent>
+<CardContent activator></CardContent>
 ```
 
 ### Card Image
 
 ```html
-<CardImage></CardImage>
+<CardImage activator></CardImage>
 ```
 
 ### Card Reveal
@@ -118,7 +120,7 @@ $ yarn add hyperapp materialize-css@next hyperapp-materialize
 ### Card Title
 
 ```html
-<CardTitle></CardTitle>
+<CardTitle activator></CardTitle>
 ```
 
 ### Container
