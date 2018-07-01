@@ -139,3 +139,31 @@ export const CardAction = ({ className, ...props }, children) => {
   }
 
 }
+
+export const CardReveal = ({ className, ...props }, children) => {
+
+  return () => {
+
+    const classes = []
+
+    if (className) {
+
+      classes.push(className)
+
+    }
+
+    classes.push('card-reveal')
+
+    return (
+
+      <div className={ classes.join(' ') } { ...props }>
+
+        { children }
+
+      </div>
+
+    )
+
+  }
+
+}
