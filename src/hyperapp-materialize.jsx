@@ -1,7 +1,7 @@
 import { Badge }                    from './components/Badge.jsx'
 import { Breadcrumbs, Breadcrumb }  from './components/Breadcrumb.jsx'
 import { Button }                   from './components/Button.jsx'
-import { Card }                     from './components/Card.jsx'
+import { Card, CardContent }        from './components/Card.jsx'
 import { Column }                   from './components/Column.jsx'
 import { Container }                from './components/Container.jsx'
 import { Image }                    from './components/Image.jsx'
@@ -16,6 +16,7 @@ export {
   Breadcrumbs,
   Button,
   Card,
+  CardContent,
   Column,
   Container,
   Image,
