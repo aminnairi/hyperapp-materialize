@@ -87,6 +87,8 @@ $ yarn add hyperapp materialize-css@next hyperapp-materialize
 <Card large></Card>
 
 <Card panel></Card>
+
+<Card horizontal></Card>
 ```
 
 ### Card Action
