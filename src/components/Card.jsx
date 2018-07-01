@@ -1,6 +1,6 @@
 import { h } from 'hyperapp'
 
-export const Card = ({ className, ...props }, children) => {
+export const Card = ({ stickyActions, className, ...props }, children) => {
 
   return () => {
 
@@ -10,6 +10,10 @@ export const Card = ({ className, ...props }, children) => {
 
       classes.push(className)
 
+    }
+
+    if (stickyActions) {
+      classes.push('sticky-actions')
     }
 
     classes.push('card')
