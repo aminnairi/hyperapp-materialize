@@ -64,7 +64,7 @@ export const Card = ({ small, medium, large, stickyActions, panel, className, ho
 
 }
 
-export const CardContent = ({ className, ...props }, children) => {
+export const CardContent = ({ activator, className, ...props }, children) => {
 
   return () => {
 
@@ -73,6 +73,12 @@ export const CardContent = ({ className, ...props }, children) => {
     if (className) {
 
       classes.push(className)
+
+    }
+
+    if (activator) {
+
+      classes.push('activator')
 
     }
 
@@ -92,7 +98,7 @@ export const CardContent = ({ className, ...props }, children) => {
 
 }
 
-export const CardImage = ({ className, ...props }, children) => {
+export const CardImage = ({ activator, className, ...props }, children) => {
 
   return () => {
 
@@ -101,6 +107,12 @@ export const CardImage = ({ className, ...props }, children) => {
     if (className) {
 
       classes.push(className)
+
+    }
+
+    if (activator) {
+
+      classes.push('activator')
 
     }
 
@@ -120,7 +132,7 @@ export const CardImage = ({ className, ...props }, children) => {
 
 }
 
-export const CardTitle = ({ className, ...props }, children) => {
+export const CardTitle = ({ activator, className, ...props }, children) => {
 
   return () => {
 
@@ -129,6 +141,12 @@ export const CardTitle = ({ className, ...props }, children) => {
     if (className) {
 
       classes.push(className)
+
+    }
+
+    if (activator) {
+
+      classes.push('activator')
 
     }
 
@@ -148,7 +166,7 @@ export const CardTitle = ({ className, ...props }, children) => {
 
 }
 
-export const CardAction = ({ className, ...props }, children) => {
+export const CardAction = ({ activator, className, ...props }, children) => {
 
   return () => {
 
@@ -157,6 +175,12 @@ export const CardAction = ({ className, ...props }, children) => {
     if (className) {
 
       classes.push(className)
+
+    }
+
+    if (activator) {
+
+      classes.push('activator')
 
     }
 
