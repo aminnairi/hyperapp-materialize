@@ -77,10 +77,18 @@ $ yarn add hyperapp materialize-css@next hyperapp-materialize
 
 ```html
 <Card></Card>
+```
 
-<Card>
-  <CardContent></CardContent>
-</Card>
+### Card Content
+
+```html
+<CardContent></CardContent>
+```
+
+### Card Image
+
+```html
+<CardImage></CardImage>
 ```
 
 ### Container
