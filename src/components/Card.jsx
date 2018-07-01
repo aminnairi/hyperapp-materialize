@@ -160,7 +160,7 @@ export const CardAction = ({ className, ...props }, children) => {
 
     }
 
-    classes.push('card-title')
+    classes.push('card-action')
 
     return (
 
