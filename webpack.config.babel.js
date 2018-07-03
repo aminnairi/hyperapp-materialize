@@ -13,7 +13,7 @@ export default env => {
     output: {
       filename: env.production ? '[name].min.js' : '[name].js',
       path: path.resolve(__dirname, 'dist'),
-      library: 'hyperapp-materialize',
+      library: 'hyperappMaterialize',
       libraryTarget: 'umd'
     },
 
