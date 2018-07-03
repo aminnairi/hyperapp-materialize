@@ -12,7 +12,7 @@ const col = (prefix, value) => {
 
 }
 
-export const Column = ({ small, medium, large, extraLarge, className, ...attributes }, children) => {
+export const Column = ({ small, medium, large, extraLarge, offsetSmall, offsetMedium, offsetLarge, offsetExtraLarge, className, ...attributes }, children) => {
 
   return () => {
 
@@ -22,6 +22,10 @@ export const Column = ({ small, medium, large, extraLarge, className, ...attribu
     classes.push(col('m', medium))
     classes.push(col('l', large))
     classes.push(col('xl', extraLarge))
+    classes.push(col('offset-s', offsetSmall))
+    classes.push(col('offset-m', offsetMedium))
+    classes.push(col('offset-l', offsetLarge))
+    classes.push(col('offset-xl', offsetExtraLarge))
     classes.push(className)
 
     return (
