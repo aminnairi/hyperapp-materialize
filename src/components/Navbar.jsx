@@ -1,6 +1,6 @@
 import { h } from 'hyperapp'
 
-export const Navbar = ({ className, ...props }, children) => {
+export const Navbar = ({ className, extended, ...props }, children) => {
 
   return () => {
 
@@ -9,6 +9,12 @@ export const Navbar = ({ className, ...props }, children) => {
     if (className) {
 
       classes.push(className)
+
+    }
+
+    if (extended) {
+
+      classes.push('nav-extended')
 
     }
 
