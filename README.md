@@ -131,6 +131,18 @@ $ yarn add hyperapp materialize-css@next hyperapp-materialize
 <Container full></Container>
 ```
 
+### Icon
+
+```html
+<Icon></Icon>
+
+<Icon left></Icon>
+
+<Icon right></Icon>
+
+<Icon color='red'></Icon>
+```
+
 ### Row
 
 ```html
