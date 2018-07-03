@@ -7,6 +7,7 @@ import { Container }                                                        from
 import { Icon }                                                             from './components/Icon.jsx'
 import { Image }                                                            from './components/Image.jsx'
 import { Link }                                                             from './components/Link.jsx'
+import { ListItem, UnorderedList }                                          from './components/List.jsx'
 import { Navbar }                                                           from './components/Navbar.jsx'
 import { Row }                                                              from './components/Row.jsx'
 import { Table }                                                            from './components/Table.jsx'
@@ -29,9 +30,11 @@ export {
   Icon,
   Image,
   Link,
+  ListItem,
   Navbar,
   Row,
   Table,
+  UnorderedList,
   Video,
   VideoContainer,
 }
