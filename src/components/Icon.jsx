@@ -1,8 +1,8 @@
 import { h } from 'hyperapp'
 
-export const Icon = () => {
+export const Icon = ({ className, left, right, color, ...props }, children) => {
 
-  return ({ className, left, right, color ...props }, children) => {
+  return () => {
 
     const classes = []
 
@@ -34,7 +34,7 @@ export const Icon = () => {
 
     return (
 
-      <i class={ classes.join(' ') }>
+      <i class={ classes.join(' ') } { ...props }>
 
         { children }
 
