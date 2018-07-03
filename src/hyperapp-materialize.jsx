@@ -4,7 +4,7 @@ import { Button }                                                           from
 import { Card, CardAction, CardContent, CardImage, CardReveal, CardTitle }  from './components/Card.jsx'
 import { Column }                                                           from './components/Column.jsx'
 import { Container }                                                        from './components/Container.jsx'
-import { Icon }                                                             from '../components/Icon.jsx'
+import { Icon }                                                             from './components/Icon.jsx'
 import { Image }                                                            from './components/Image.jsx'
 import { Row }                                                              from './components/Row.jsx'
 import { Table }                                                            from './components/Table.jsx'
