@@ -187,6 +187,8 @@ $ yarn add hyperapp materialize-css@next hyperapp-materialize
 <Link brandLogo></Link>
 
 <Link center></Link>
+
+<Link sidenavTrigger data-target='mobile'></Link>
 ```
 
 ### Navbar
