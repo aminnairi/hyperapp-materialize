@@ -179,6 +179,12 @@ $ yarn add hyperapp materialize-css@next hyperapp-materialize
 <Image src='path/to/image.png' alt='image' circle />
 ```
 
+### Navbar
+
+```html
+<Navbar></Navbar>
+```
+
 ### Table
 
 ```html
