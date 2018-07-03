@@ -6,7 +6,7 @@ import { Column }                                                           from
 import { Container }                                                        from './components/Container.jsx'
 import { Icon }                                                             from './components/Icon.jsx'
 import { Image }                                                            from './components/Image.jsx'
-import { Navbar }                                                           from './component/Navbar.jsx'
+import { Navbar }                                                           from './components/Navbar.jsx'
 import { Row }                                                              from './components/Row.jsx'
 import { Table }                                                            from './components/Table.jsx'
 import { Video }                                                            from './components/Video.jsx'
