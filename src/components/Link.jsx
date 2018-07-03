@@ -1,6 +1,6 @@
 import { h } from 'hyperapp'
 
-export const Link = ({ className, brandLogo, center, ...props }, children) => {
+export const Link = ({ className, brandLogo, center, sidenavTrigger, ...props }, children) => {
 
   return () => {
 
@@ -21,6 +21,12 @@ export const Link = ({ className, brandLogo, center, ...props }, children) => {
     if (center) {
 
       classes.push('center')
+
+    }
+
+    if (sidenavTrigger) {
+
+      classes.push('sidenav-trigger')
 
     }
 
