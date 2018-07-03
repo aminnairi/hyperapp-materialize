@@ -159,6 +159,14 @@ $ yarn add hyperapp materialize-css@next hyperapp-materialize
 <Column large='12'></Column>
 
 <Column extraLarge='12'></Column>
+
+<Column offsetSmall='12'></Column>
+
+<Column offsetMedium='12'></Column>
+
+<Column offsetLarge='12'></Column>
+
+<Column offsetExtraLarge='12'></Column>
 ```
 
 ### Image
