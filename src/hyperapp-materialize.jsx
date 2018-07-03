@@ -6,6 +6,7 @@ import { Column }                                                           from
 import { Container }                                                        from './components/Container.jsx'
 import { Icon }                                                             from './components/Icon.jsx'
 import { Image }                                                            from './components/Image.jsx'
+import { Link }                                                             from './components/Link.jsx'
 import { Navbar }                                                           from './components/Navbar.jsx'
 import { Row }                                                              from './components/Row.jsx'
 import { Table }                                                            from './components/Table.jsx'
@@ -27,6 +28,7 @@ export {
   Container,
   Icon,
   Image,
+  Link,
   Navbar,
   Row,
   Table,
