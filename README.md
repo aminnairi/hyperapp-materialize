@@ -135,6 +135,8 @@ $ yarn add hyperapp materialize-css@next hyperapp-materialize
 
 ```html
 <Footer></Footer>
+
+<Footer sticky></Footer>
 ```
 
 ### Footer Copyright
