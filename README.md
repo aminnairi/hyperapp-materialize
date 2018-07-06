@@ -191,6 +191,18 @@ $ yarn add hyperapp materialize-css@next hyperapp-materialize
 <Link sidenavTrigger data-target='mobile'></Link>
 ```
 
+### List
+
+```html
+<List></List>
+
+<List unordered></List>
+
+<List left></List>
+
+<List right></List>
+```
+
 ### ListItem
 
 ```html
@@ -221,16 +233,6 @@ $ yarn add hyperapp materialize-css@next hyperapp-materialize
 <Table centered></Table>
 
 <Table responsive></Table>
-```
-
-### UnorderedList
-
-```html
-<UnorderedList></UnorderedList>
-
-<UnorderedList left></UnorderedList>
-
-<UnorderedList right></UnorderedList>
 ```
 
 ### Video
