@@ -205,6 +205,8 @@ $ yarn add hyperapp materialize-css@next hyperapp-materialize
 <Navbar></Navbar>
 
 <Navbar extended></Navbar>
+
+<Navbar fixed></Navbar>
 ```
 
 ### Table
