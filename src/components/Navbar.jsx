@@ -1,6 +1,6 @@
 import { h } from 'hyperapp'
 
-export const Navbar = ({ className, extended, ...props }, children) => {
+export const Navbar = ({ className, extended, fixed, ...props }, children) => {
 
   return () => {
 
@@ -18,19 +18,43 @@ export const Navbar = ({ className, extended, ...props }, children) => {
 
     }
 
-    return (
+    if (fixed) {
 
-      <nav className={ classes.join(' ') } { ...props }>
+      return (
 
-        <div class="nav-wrapper">
+        <div className='navbar-fixed'>
 
-          { children }
+          <nav className={ classes.join(' ') } { ...props }>
+
+            <div class="nav-wrapper">
+
+              { children }
+
+            </div>
+
+          </nav>
 
         </div>
 
-      </nav>
+      )
 
-    )
+    } else {
+
+      return (
+
+        <nav className={ classes.join(' ') } { ...props }>
+
+          <div class="nav-wrapper">
+
+            { children }
+
+          </div>
+
+        </nav>
+
+      )
+
+    }
 
   }
 
