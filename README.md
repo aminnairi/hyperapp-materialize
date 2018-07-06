@@ -131,6 +131,18 @@ $ yarn add hyperapp materialize-css@next hyperapp-materialize
 <Container full></Container>
 ```
 
+### Footer
+
+```html
+<Footer></Footer>
+```
+
+### Footer Copyright
+
+```html
+<FooterCopyright></FooterCopyright>
+```
+
 ### Icon
 
 ```html
