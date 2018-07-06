@@ -4,6 +4,7 @@ import { Button }                                                           from
 import { Card, CardAction, CardContent, CardImage, CardReveal, CardTitle }  from './components/Card.jsx'
 import { Column }                                                           from './components/Column.jsx'
 import { Container }                                                        from './components/Container.jsx'
+import { Footer, FooterCopyright }                                          from './components/Footer.jsx'
 import { Icon }                                                             from './components/Icon.jsx'
 import { Image }                                                            from './components/Image.jsx'
 import { Link }                                                             from './components/Link.jsx'
@@ -27,6 +28,8 @@ export {
   CardTitle,
   Column,
   Container,
+  Footer,
+  FooterCopyright,
   Icon,
   Image,
   Link,
