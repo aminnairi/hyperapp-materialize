@@ -1,6 +1,6 @@
 import { h } from 'hyperapp'
 
-export const List = ({ className, unordered, left, right, ...props }, children) => {
+export const List = ({ className, unordered, sidenav, left, right, ...props }, children) => {
 
   return () => {
 
@@ -21,6 +21,12 @@ export const List = ({ className, unordered, left, right, ...props }, children) 
     if (right) {
 
       classes.push('right')
+
+    }
+
+    if (sidenav) {
+
+      classes.push('sidenav')
 
     }
 
