@@ -201,6 +201,8 @@ $ yarn add hyperapp materialize-css@next hyperapp-materialize
 <List left></List>
 
 <List right></List>
+
+<List sidenav></List>
 ```
 
 ### ListItem
