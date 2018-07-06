@@ -1,6 +1,6 @@
 import { h } from 'hyperapp'
 
-export const UnorderedList = ({ className, left, right, ...props }, children) => {
+export const List = ({ className, unordered, left, right, ...props }, children) => {
 
   return () => {
 
@@ -24,15 +24,32 @@ export const UnorderedList = ({ className, left, right, ...props }, children) =>
 
     }
 
-    return (
+    if (unordered) {
 
-      <ul className={ classes.join(' ') } { ...props }>
+      return (
 
-        { children }
+        <ul className={ classes.join(' ') } { ...props }>
 
-      </ul>
+          { children }
 
-    )
+        </ul>
+
+      )
+
+    } else {
+
+      return (
+
+        <ol className={ classes.join(' ') } { ...props }>
+
+          { children }
+
+        </ol>
+
+      )
+
+    }
+
 
   }
 
