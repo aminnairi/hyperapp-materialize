@@ -1,4 +1,7 @@
 module.exports = {
+  "globals": {
+    "M": false
+  },
   "env": {
     "browser": true,
     "es6": true,
