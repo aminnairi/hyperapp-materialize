@@ -30,11 +30,13 @@ export const List = ({ className, unordered, sidenav, left, right, ...props }, c
 
     }
 
+    const sidenavInitialization = element => sidenav && M.Sidenav.init(element, {})
+
     if (unordered) {
 
       return (
 
-        <ul className={ classes.join(' ') } { ...props }>
+        <ul className={ classes.join(' ') } { ...props } oncreate={ sidenavInitialization }>
 
           { children }
 
@@ -46,7 +48,7 @@ export const List = ({ className, unordered, sidenav, left, right, ...props }, c
 
       return (
 
-        <ol className={ classes.join(' ') } { ...props }>
+        <ol className={ classes.join(' ') } { ...props } oncreate={ sidenavInitialization }>
 
           { children }
 
