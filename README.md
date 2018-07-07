@@ -1,7 +1,6 @@
 # hyperapp-materialize
 Hyperapp Components for Materialize CSS
 
-:warning: Note that the NPM package is not yet shipped. It will take some time until I settle and configure everything but it should be ready soon! :warning:
 
 ```html
 <!doctype html>
@@ -52,6 +51,8 @@ app(state, actions, view, container)
 ```
 
 ## Installation
+
+:warning: Note that the NPM package is not yet shipped. It will take some time until I settle and configure everything but it should be ready soon! :warning:
 
 ```bash
 $ npm install --save hyperapp materialize-css@next hyperapp-materialize
