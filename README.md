@@ -1,8 +1,7 @@
-# hyperapp-materialize
+<p align="center">
+  <img src='https://image.ibb.co/hkumz8/Screenshot_from_2018_07_07_19_10_03.png' style='width: 100px;' />
+</p>
 
-![Hyperapp Materialize](https://ibb.co/gE2vsT)
-
-Hyperapp Components for Materialize CSS
 
 ## Installation
 
