@@ -5,7 +5,7 @@ Hyperapp Components for Materialize CSS
 
 ### Node
 
-:warning: Note that the NPM package is not yet shipped. It will take some time until I settle and configure everything but it should be ready soon! :warning:
+:warning: NPM package comming soon :warning:
 
 ```bash
 $ npm install --save  hyperapp \
