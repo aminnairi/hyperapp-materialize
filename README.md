@@ -1,7 +1,6 @@
 # hyperapp-materialize
 Hyperapp Components for Materialize CSS
 
-
 ```html
 <!doctype html>
 <html>
