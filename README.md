@@ -10,8 +10,6 @@
 
 ### Node
 
-:warning: NPM package comming soon :warning:
-
 ```bash
 $ npm install --save  hyperapp \
                       materialize-css@next \
