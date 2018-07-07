@@ -1,6 +1,7 @@
 import packagejson from './package.json'
 import path from 'path'
 import CleanWebpackPlugin from 'clean-webpack-plugin'
+import { BannerPlugin } from 'webpack'
 
 export default env => {
 
@@ -35,7 +36,8 @@ export default env => {
     },
 
     plugins: [
-      new CleanWebpackPlugin(['dist'])
+      new CleanWebpackPlugin(['dist']),
+      new BannerPlugin('MIT License Copyright (c) 2018 Amin NAIRI')
     ]
 
   }
