@@ -1,4 +1,7 @@
 # hyperapp-materialize
+
+![Hyperapp Materialize](https://ibb.co/gE2vsT)
+
 Hyperapp Components for Materialize CSS
 
 ## Installation
