@@ -30,7 +30,15 @@ export const List = ({ className, unordered, sidenav, left, right, ...props }, c
 
     }
 
-    const sidenavInitialization = element => sidenav && window.addEventListener('load', () => M.Sidenav.init(element, {}))
+    const sidenavInitialization = element => {
+
+      if (sidenav) {
+
+        M.Sidenav.init(element, {})
+
+      }
+
+    }
 
     if (unordered) {
 
