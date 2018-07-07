@@ -10,18 +10,16 @@ Hyperapp Components for Materialize CSS
     <link rel='stylesheet' href='materialize.min.css'>
   </head>
   <body>
-    <script src='materialize.min.js'></script>
     <script src='hyperapp.min.js'></script>
+    <script src='materialize.min.js'></script>
     <script src='hyperapp-materialize.min.js'></script>
     <script>
     const { h, app }       = hyperapp
     const { Navbar, Link } = hyperappMaterialize
-    
+
     const state   = {}
     const actions = {}
     const view    = () => <Navbar><Link href='#!' brandLogo>MyApp</Link></Navbar>
-
-
 
     app(state, actions, view, document.body)
     </script>
