@@ -3,6 +3,9 @@
 </p>
 
 
+[![GitHub license](https://img.shields.io/github/license/aminnairi/hyperapp-materialize.svg)](https://github.com/aminnairi/hyperapp-materialize/blob/master/LICENSE)
+
+
 ## Installation
 
 ### Node
