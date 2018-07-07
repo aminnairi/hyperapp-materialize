@@ -3,6 +3,32 @@ Hyperapp Components for Materialize CSS
 
 :warning: Note that the NPM package is not yet shipped. It will take some time until I settle and configure everything but it should be ready soon! :warning:
 
+```html
+<!doctype html>
+<html>
+  <head>
+    <link rel='stylesheet' href='materialize.min.css'>
+  </head>
+  <body>
+    <script src='materialize.min.js'></script>
+    <script src='hyperapp.min.js'></script>
+    <script src='hyperapp-materialize.min.js'></script>
+    <script>
+    const { h, app }       = hyperapp
+    const { Navbar, Link } = hyperappMaterialize
+    
+    const state   = {}
+    const actions = {}
+    const view    = () => <Navbar><Link href='#!' brandLogo>MyApp</Link></Navbar>
+
+
+
+    app(state, actions, view, document.body)
+    </script>
+  </body>
+</html>
+```
+
 ## Usage
 
 ```javascript
