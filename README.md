@@ -51,12 +51,39 @@ app(state, actions, view, container)
 
 ## Installation
 
+### Node
+
 :warning: Note that the NPM package is not yet shipped. It will take some time until I settle and configure everything but it should be ready soon! :warning:
 
 ```bash
 $ npm install --save hyperapp materialize-css@next hyperapp-materialize
-$ # or
-$ yarn add hyperapp materialize-css@next hyperapp-materialize
+```
+
+#### CommonJS
+
+```javascript
+'use strict'
+
+require 'materialize-css/dist/css/materialize.min.css'
+require 'materialize-css/dist/js/materialize.min.js'
+
+const { h, app } = require('hyperapp');
+
+const { Navbar, Link } = require('hyperapp-materialize');
+
+const state = {}
+
+const actions = {}
+
+const view = () => (
+  <Navbar>
+    <Link href='#!' brandLogo>
+      MyApp
+    </Link>
+  </Navbar>
+)
+
+app(state, actions, view, document.body)
 ```
 
 ## Components
