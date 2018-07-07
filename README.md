@@ -1,54 +1,6 @@
 # hyperapp-materialize
 Hyperapp Components for Materialize CSS
 
-```html
-<!doctype html>
-<html>
-  <head>
-    <link rel='stylesheet' href='materialize.min.css'>
-  </head>
-  <body>
-    <script src='hyperapp.min.js'></script>
-    <script src='materialize.min.js'></script>
-    <script src='hyperapp-materialize.min.js'></script>
-    <script>
-    const { h, app }       = hyperapp
-    const { Navbar, Link } = hyperappMaterialize
-
-    const state   = {}
-    const actions = {}
-    const view    = () => <Navbar><Link href='#!' brandLogo>MyApp</Link></Navbar>
-
-    app(state, actions, view, document.body)
-    </script>
-  </body>
-</html>
-```
-
-## Usage
-
-```javascript
-import 'materialize-css/dist/css/materialize.min.css'
-import 'materialize-css/dist/js/materialize.min.js'
-
-import { h, app }     from 'hyperapp'
-import { Container }  from 'hyperapp-materialize'
-
-const state = {}
-
-const actions = {}
-
-const view = () => (
-  <Container full>
-    <h1>Hyperapp & Materialize</h1>
-  </Container>
-)
-
-const container = document.body
-
-app(state, actions, view, container)
-```
-
 ## Installation
 
 ### Node
@@ -56,7 +8,9 @@ app(state, actions, view, container)
 :warning: Note that the NPM package is not yet shipped. It will take some time until I settle and configure everything but it should be ready soon! :warning:
 
 ```bash
-$ npm install --save hyperapp materialize-css@next hyperapp-materialize
+$ npm install --save  hyperapp \
+                      materialize-css@next \
+                      hyperapp-materialize
 ```
 
 #### CommonJS
@@ -67,10 +21,99 @@ $ npm install --save hyperapp materialize-css@next hyperapp-materialize
 require 'materialize-css/dist/css/materialize.min.css'
 require 'materialize-css/dist/js/materialize.min.js'
 
-const { h, app } = require('hyperapp');
+const { h, app } = require('hyperapp')
 
-const { Navbar, Link } = require('hyperapp-materialize');
+const { Navbar, Link } = require('hyperapp-materialize')
+```
 
+#### ESModule
+
+```javascript
+'use strict'
+
+import 'materialize-css/dist/css/materialize.min.css'
+import 'materialize-css/dist/js/materialize.min.js'
+
+import { h, app } from 'hyperapp'
+
+import { Navbar, Link } from 'hyperapp-materialize'
+```
+
+### Raw Files
+
+Download the file located under `dist/hyperapp-materialize.min.js` and anything else ([Hyperapp](https://github.com/hyperapp/hyperapp), [Materialize](https://github.com/Dogfalo/materialize)) to your local development folder.
+
+```html
+<!doctype html>
+
+<html>
+
+  <head>
+
+    <link rel='stylesheet' href='materialize.min.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+
+  </head>
+
+  <body>
+
+    <script src='hyperapp.min.js'></script>
+    <script src='materialize.min.js'></script>
+    <script src='hyperapp-materialize.min.js'></script>
+
+    <!-- Your transpiled JSX entry point -->
+    <script src='index.js'></script>
+
+  </body>
+
+</html>
+```
+
+Note: you can replace [Unpkg](https://unpkg.com/#/) by your prefered CDN provider.
+
+```javascript
+const { h, app } = hyperapp
+
+const { Navbar, Link } = hyperappMaterialize
+```
+
+### Hosted Libraries
+
+```html
+<!doctype html>
+
+<html>
+
+  <head>
+
+    <link rel='stylesheet' href='https://unpkg.com/materialize-css@next/dist/css/materialize.min.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+
+  </head>
+
+  <body>
+
+    <script src='https://unpkg.com/hyperapp/dist/hyperapp.js'></script>
+    <script src='https://unpkg.com/materialize-css@next/dist/js/materialize.min.js'></script>
+    <script src='https://unpkg.com/hyperapp-materialize/dist/hyperapp-materialize.min.js'></script>
+
+    <!-- Your transpiled JSX entry point -->
+    <script src='index.js'></script>
+
+  </body>
+
+</html>
+```
+
+```javascript
+const { h, app } = hyperapp
+
+const { Navbar, Link } = hyperappMaterialize
+```
+
+## Usage
+
+```javascript
 const state = {}
 
 const actions = {}
