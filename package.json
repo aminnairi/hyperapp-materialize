@@ -1,7 +1,7 @@
 {
   "name": "hyperapp-materialize",
   "version": "0.0.1",
-  "main": "src/hyperapp-materialize.jsx",
+  "main": "dist/hyperapp-materialize.min.js",
   "repository": "git@github.com:aminnairi/hyperapp-materialize",
   "author": "Amin NAIRI <nairi.amin@gmail.com>",
   "license": "MIT",
