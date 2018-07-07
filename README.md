@@ -13,6 +13,29 @@ $ npm install --save  hyperapp \
                       hyperapp-materialize
 ```
 
+### HTML
+
+```html
+<!doctype html>
+
+<html>
+
+  <head>
+
+    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+
+  </head>
+
+  <body>
+
+    <!-- Your transpiled JSX entry point -->
+    <script src='index.js'></script>
+
+  </body>
+
+</html>
+```
+
 #### CommonJS
 
 ```javascript
@@ -39,7 +62,9 @@ import { h, app } from 'hyperapp'
 import { Navbar, Link } from 'hyperapp-materialize'
 ```
 
-### Raw Files
+### Without Node
+
+#### Local Files
 
 Download the file located under `dist/hyperapp-materialize.min.js` and anything else ([Hyperapp](https://github.com/hyperapp/hyperapp), [Materialize](https://github.com/Dogfalo/materialize)) to your local development folder.
 
