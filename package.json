@@ -24,6 +24,7 @@
     "webpack-cli": "^3.0.8"
   },
   "peerDependencies": {
-    "hyperapp": "1.x.x"
+    "hyperapp": "1.x.x",
+    "materialize-css": "1.x.x"
   }
 }
