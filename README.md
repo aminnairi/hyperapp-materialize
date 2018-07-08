@@ -328,6 +328,8 @@ app(state, actions, view, document.body)
 <Link center></Link>
 
 <Link sidenavTrigger data-target='mobile'></Link>
+
+<Link autoclose></Link>
 ```
 
 ### List
